@@ -265,7 +265,7 @@ function on_data_table_initialized() {
         change_cost(url_settings['cost']);
         break;
       case 'filter':
-        data_table.filter(url_settings['filter']);
+        data_table.search(url_settings['filter']);
         break;
       case 'min_memory':
         $('[data-action="datafilter"][data-type="memory"]').val(url_settings['min_memory']);
